@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Kanit&family=Kumbh+Sans:wght@400;700&family=Oswald:wght@200;300;400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&family=Roboto+Mono:wght@600&family=Roboto:wght@100;300;400;700&family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-desktop">
+      <img src="images/logo.svg" alt="Logo de la tienda Sneakers" class="logo-principal">
+      <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="div-carrito-perfil">
+      <div class="carrito">
+        <div id="btn-carrito">🛒</div>
+        
+      </div>
+      <div class="carrito-de-compras">
+        <h3 class="titulo-carrito">Cart<span style="font-size: 2em;" class="trash">🗑</span></h3>
+
+
+        <div class="producto-carrito">
+          <div class="it-is-empty">Your cart is empty</div>
+          <div class="producto-carrito2">
+            <img id="imgProducto" src="images/image-product-1-thumbnail.jpg" alt="">
+            <div>
+              <h3 id="nombreProducto">Fall Limited Edition Sneakers</h3>
+              <p id="precioProducto">$125.00</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="perfil">
+        <img src="images/image-avatar.png" alt="Imagen de perfil">
+      </div>
+    </div>
+  </header>
+
+  <article class="article-primero">
+    <section class="imagenes-productos">
+        <div class="img-zapatilla-grande-1">
+          <img src="images/image-product-1.jpg" alt="zapatilla grande" class="zapatilla-grande-cambiar">
+        </div>
+        <div class="container-zapatillas">
+          <div><img src="images/image-product-1-thumbnail.jpg" alt="zapatilla 1 chiquita" class="div-zapatillas"></div>
+          <div><img src="images/image-product-2-thumbnail.jpg" alt="zapatilla 2 chiquita" class="div-zapatillas"></div>
+          <div><img src="images/image-product-3-thumbnail.jpg" alt="zapatilla 3 chiquita" class="div-zapatillas"></div>
+          <div><img src="images/image-product-4-thumbnail.jpg" alt="zapatilla 4 chiquita" class="div-zapatillas"></div>
+        </div>
+    </section>
+
+    <section class="section-info-producto">
+      <div class="div-general-info">
+        <span class="span-sneaker">SNEAKER COMPANY</span>
+        <h2 class="titulo-principal">Fall Limited Edition Sneakers</h2>
+        <p class="parrafo-principal">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="precio-principal">$125.00 <span class="descuento">50%</span> </div>
+        <span class="precio-secundario">$250.00</span>
+        <div class="div-agregar-carrito">
+          <button type="button" class="btn-sumar">+</button>
+          <div class="cantidad-producto">0</div>
+          <button type="button" class="btn-restar">-</button>
+          <button class="btn-agregar-carrito"><span>icon</span>Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </article>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Joel Cordero</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
